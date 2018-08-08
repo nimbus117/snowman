@@ -5,4 +5,8 @@ class Game
     @player = player
     @word = word
   end
+
+  def subtract_life()
+    @player.lives -= 1
+  end
 end

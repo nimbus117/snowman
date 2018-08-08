@@ -14,4 +14,9 @@ class GameTest < MiniTest::Test
   def test_has_player
     assert_equal(@player, @game.player)
   end
+
+  def test_can_subtract_life
+    @game.subtract_life()
+    assert_equal(5, @player.lives)
+  end
 end
