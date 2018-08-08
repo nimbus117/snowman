@@ -9,7 +9,7 @@ class HiddenWord
     @word.each_char { |c|
       if c == ' '
         display_word << ' '
-      elsif guessed_chars.include? c
+      elsif guessed_chars.include? c.downcase
         display_word << c
       else
         display_word << '*'

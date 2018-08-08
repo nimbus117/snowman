@@ -12,7 +12,7 @@ class Game
   end
 
   def guess(char)
-    @guessed_chars.push(char)
+    @guessed_chars.push(char.downcase)
     subtract_life() if !@word.test(char)
   end
 
