@@ -18,7 +18,7 @@ class HiddenWord
     return display_word
   end
 
-  def test(char)
-    @word.include? char
+  def test?(char)
+    @word.downcase.include? char.downcase
   end
 end 

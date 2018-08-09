@@ -18,10 +18,10 @@ class PlayerTest < MiniTest::Test
   end
 
   def test_can_test_letter__true
-    assert_equal(true, @word.test('t'))
+    assert_equal(true, @word.test?('t'))
   end
 
   def test_can_test_letter__false
-    assert_equal(false, @word.test('x'))
+    assert_equal(false, @word.test?('x'))
   end
 end
